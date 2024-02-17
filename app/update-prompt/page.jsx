@@ -73,3 +73,4 @@ function UpdatePrompt() {
 }
 
 export default UpdatePrompt
+export const dynamic = 'force-dynamic'

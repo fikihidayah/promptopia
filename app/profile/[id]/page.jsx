@@ -33,3 +33,4 @@ function ProfileDetail() {
 }
 
 export default ProfileDetail
+export const dynamic = 'force-dynamic'
