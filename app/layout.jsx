@@ -5,6 +5,7 @@ import '@/styles/globals.css'
 
 import Nav from '@/components/Nav'
 import Provider from '@/components/Provider'
+import { Suspense } from 'react'
 
 // IS Data in <head> tag HTML, 
 export const metadata = {
@@ -27,7 +28,9 @@ function RootLayout({children}) {
                     <main className='app'>
                         <Nav />
                         {/* Children is a page want to be rendered, the filename is page.jsx */}
-                        {children}
+                        <Suspense>
+                            {children}
+                        </Suspense>
                     </main>
                 </Provider>
             </body>
